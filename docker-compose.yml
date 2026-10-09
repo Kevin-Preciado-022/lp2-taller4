@@ -1,24 +1,21 @@
-services:
+version: "3.9"
 
+services:
   database:
     image: postgres:15
-    container_name: lp2taller4-database
-    restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
     volumes:
-      # Volumen nombrado: los datos sobreviven aunque el contenedor se borre.
-      - db_data:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data
     ports:
-      # Exponer el puerto al host es opcional; solo sirve para que puedas
-      # conectarte con un cliente SQL (DBeaver, psql, etc.) desde WSL2/Windows.
       - "5432:5432"
     healthcheck:
-      # TODO 1: Completa el comando que verifica si Postgres ya está listo
-      #         para aceptar conexiones. Pista: pg_isready acepta -U <usuario>
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
-      interval: 5s
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
       timeout: 5s
       retries: 5
+
+volumes:
+  pgdata:
