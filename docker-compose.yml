@@ -15,5 +15,15 @@ services:
       timeout: 5s
       retries: 5
 
+  api:
+    build: ./api
+    environment:
+      - DATABASE_URL=postgresql://taller4_user:Cielo_Rojo_1@database:5432/taller4_db
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - "8000:8000"   # temporal, para probar /docs antes del reverse proxy
+
 volumes:
   pgdata:

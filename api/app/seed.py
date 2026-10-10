@@ -10,10 +10,10 @@ Base.metadata.create_all(bind=engine)
 def cargar_datos():
     db: Session = SessionLocal()
     try:
-        with open("api/data/seed.json", "r", encoding="utf-8") as f:
+        # Ruta corregida: "data/seed.json"
+        with open("data/seed.json", "r", encoding="utf-8") as f:
             datos = json.load(f)
 
-        # Insertar categorías y productos
         for item in datos.get("categorias", []):
             categoria = db.query(models.Categoria).filter_by(nombre=item["nombre"]).first()
             if not categoria:

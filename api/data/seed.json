@@ -1,0 +1,209 @@
+{
+  "categorias": [
+    {
+      "nombre": "Suplementos",
+      "productos": [
+        {
+          "sku": "SUP-001",
+          "marca": "Optimum Nutrition",
+          "nombre": "Whey Gold Standard 2lb",
+          "precio": 189900,
+          "foto": "images/whey-gold-standard.jpg",
+          "stock": 20,
+          "activo": true
+        },
+        {
+          "sku": "SUP-002",
+          "marca": "Cellucor",
+          "nombre": "C4 Original Pre-Workout",
+          "precio": 197800,
+          "foto": "images/c4-preworkout.jpg",
+          "stock": 0,
+          "activo": true
+        },
+        {
+          "sku": "SUP-003",
+          "marca": "BSN",
+          "nombre": "Aminoácidos BCAA",
+          "precio": 95000,
+          "foto": "images/bcaa.jpg",
+          "stock": 15,
+          "activo": true
+        },
+        {
+          "sku": "SUP-004",
+          "marca": "Universal",
+          "nombre": "Creatina Monohidratada",
+          "precio": 80000,
+          "foto": "images/creatina.jpg",
+          "stock": 0,
+          "activo": true
+        }
+      ]
+    },
+    {
+      "nombre": "Accesorios",
+      "productos": [
+        {
+          "sku": "ACC-001",
+          "marca": "Nike",
+          "nombre": "Guantes de entrenamiento",
+          "precio": 40000,
+          "foto": "images/guantes.jpg",
+          "stock": 15,
+          "activo": true
+        },
+        {
+          "sku": "ACC-002",
+          "marca": "Adidas",
+          "nombre": "Cinturón lumbar",
+          "precio": 60000,
+          "foto": "images/cinturon.jpg",
+          "stock": 0,
+          "activo": true
+        },
+        {
+          "sku": "ACC-003",
+          "marca": "Everlast",
+          "nombre": "Vendas para boxeo",
+          "precio": 25000,
+          "foto": "images/vendas.jpg",
+          "stock": 40,
+          "activo": true
+        },
+        {
+          "sku": "ACC-004",
+          "marca": "Reebok",
+          "nombre": "Straps para levantamiento",
+          "precio": 35000,
+          "foto": "images/straps.jpg",
+          "stock": 0,
+          "activo": true
+        }
+      ]
+    },
+    {
+      "nombre": "Equipos",
+      "productos": [
+        {
+          "sku": "EQU-001",
+          "marca": "Sport Fitness",
+          "nombre": "Kit Mancuernas 20 KG con barra",
+          "precio": 245622,
+          "foto": "images/mancuernas-20kg.jpg",
+          "stock": 30,
+          "activo": true
+        },
+        {
+          "sku": "EQU-002",
+          "marca": "ProForm",
+          "nombre": "Bicicleta estática",
+          "precio": 1500000,
+          "foto": "images/bicicleta.jpg",
+          "stock": 0,
+          "activo": true
+        },
+        {
+          "sku": "EQU-003",
+          "marca": "NordicTrack",
+          "nombre": "Caminadora eléctrica",
+          "precio": 2500000,
+          "foto": "images/caminadora.jpg",
+          "stock": 5,
+          "activo": true
+        },
+        {
+          "sku": "EQU-004",
+          "marca": "Body-Solid",
+          "nombre": "Banco de pesas ajustable",
+          "precio": 450000,
+          "foto": "images/banco.jpg",
+          "stock": 0,
+          "activo": true
+        }
+      ]
+    },
+    {
+      "nombre": "Vestimenta",
+      "productos": [
+        {
+          "sku": "VEST-001",
+          "marca": "Under Armour",
+          "nombre": "Camiseta deportiva",
+          "precio": 80000,
+          "foto": "images/camiseta.jpg",
+          "stock": 20,
+          "activo": true
+        },
+        {
+          "sku": "VEST-002",
+          "marca": "Adidas",
+          "nombre": "Zapatos deportivos",
+          "precio": 250000,
+          "foto": "images/zapatos.jpg",
+          "stock": 0,
+          "activo": true
+        },
+        {
+          "sku": "VEST-003",
+          "marca": "Nike",
+          "nombre": "Pantalón de entrenamiento",
+          "precio": 120000,
+          "foto": "images/pantalon.jpg",
+          "stock": 10,
+          "activo": true
+        },
+        {
+          "sku": "VEST-004",
+          "marca": "Reebok",
+          "nombre": "Sudadera deportiva",
+          "precio": 150000,
+          "foto": "images/sudadera.jpg",
+          "stock": 0,
+          "activo": true
+        }
+      ]
+    },
+    {
+      "nombre": "Bebidas",
+      "productos": [
+        {
+          "sku": "BEV-001",
+          "marca": "Gatorade",
+          "nombre": "Bebida isotónica 500ml",
+          "precio": 5000,
+          "foto": "images/gatorade.jpg",
+          "stock": 100,
+          "activo": true
+        },
+        {
+          "sku": "BEV-002",
+          "marca": "Monster",
+          "nombre": "Bebida energética Monster",
+          "precio": 9000,
+          "foto": "images/monster.jpg",
+          "stock": 0,
+          "activo": true
+        },
+        {
+          "sku": "BEV-003",
+          "marca": "Red Bull",
+          "nombre": "Bebida energética Red Bull",
+          "precio": 8000,
+          "foto": "images/redbull.jpg",
+          "stock": 50,
+          "activo": true
+        },
+        {
+          "sku": "BEV-004",
+          "marca": "Powerade",
+          "nombre": "Bebida isotónica Powerade",
+          "precio": 6000,
+          "foto": "images/powerade.jpg",
+          "stock": 0,
+          "activo": true
+        }
+      ]
+    }
+  ]
+}
