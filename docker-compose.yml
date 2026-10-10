@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   database:
     image: postgres:15
@@ -7,8 +9,6 @@ services:
       - POSTGRES_DB=${POSTGRES_DB}
     volumes:
       - pgdata:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
@@ -22,16 +22,23 @@ services:
     depends_on:
       database:
         condition: service_healthy
-    ports:
-      - "8000:8000" # temporal, para probar /docs antes del reverse proxy
 
   frontend:
     build: ./frontend
-    ports:
-      - "3000:3000" # temporal, para verificar diseño antes del proxy
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=/api
     depends_on:
       - api
 
+  reverse-proxy:
+    build: ./reverse-proxy
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+      - frontend
+
 volumes:
   pgdata:
+
 
