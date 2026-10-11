@@ -11,7 +11,7 @@ FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 # Relative path: nginx routes /api/ to the FastAPI service
-ARG NEXT_PUBLIC_API_BASE_URL=http://api:8000
+ARG NEXT_PUBLIC_API_BASE_URL=/api
 ENV NEXT_PUBLIC_API_BASE_URL=$NEXT_PUBLIC_API_BASE_URL
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN pnpm build
