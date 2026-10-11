@@ -11,13 +11,58 @@
 
 ## Descripción del Proyecto
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut quam dolor. Quisque elementum est sed massa gravida convallis. Donec volutpat turpis eget lectus feugiat congue. Morbi rutrum auctor eleifend. Etiam iaculis libero tellus, vel aliquet erat tempor sed. Duis efficitur quam vel sapien luctus, sed semper lacus mollis. Suspendisse non nunc eleifend, aliquet elit eget, condimentum augue.
+# Tienda Virtual con FastAPI, PostgreSQL y Docker
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus vel nibh fringilla, porta elit vel, consequat libero. Nulla et libero ac nulla ultricies sollicitudin. Sed viverra non nulla id convallis. Morbi vel varius lacus, in maximus nunc. Praesent sed semper diam. Pellentesque vehicula nulla augue, ut porta dolor consequat at.
+Este proyecto implementa una tienda virtual con backend en **FastAPI**, base de datos en **PostgreSQL** y despliegue mediante **Docker Compose**. Incluye carga automática de datos iniciales (categorías y productos) desde un archivo `seed.json`.
 
+---
+
+## 🚀 Tecnologías utilizadas
+- **Python 3.11**
+- **FastAPI** (API REST)
+- **SQLAlchemy** (ORM)
+- **PostgreSQL 15**
+- **Docker & Docker Compose**
+- **Nginx** (reverse proxy)
+- **Next.js** (frontend)
+
+---
+
+## 📂 Estructura del proyecto
+lp2-taller4/
+├── api/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   ├── database.py
+│   │   ├── routers/
+│   │   └── seed.py
+│   └── data/seed.json
+├── frontend/
+├── reverse-proxy/
+│   └── nginx.conf
+├── docker-compose.yml
+└── README.md
 ## Proceso
 
-Morbi quam lectus, tempus sit amet mi non, facilisis dignissim erat. Aenean tortor libero, rhoncus eu eleifend ut, volutpat id nisi. Ut porta eros at ante rutrum pharetra. Integer nec nulla dictum, vestibulum ligula id, hendrerit ex. Morbi eget tortor metus.
+Siguiento los pasos de la guia y teniendo en cuenta la estrutura de los proyectos anteriores (los talleres anteriores), agregando dos nuevos conectenedpres reverse proxy y fronted la creacion de frontend, junto con su posterior conexion a los otros cotenedores. aqui esta la configuracion
+
+
+---
+
+## ⚙️ Configuración
+
+1. Clonar el repositorio:
+   ```bash
+   git clone <url-del-repo>
+   cd lp2-taller4
+
+POSTGRES_USER=taller4_user
+POSTGRES_PASSWORD=Cielo_Rojo_1
+POSTGRES_DB=taller4_db
+DATABASE_URL=postgresql://taller4_user:Cielo_Rojo_1@database:5432/taller4_db
+
+
 
 [GUIA.md](docs/GUIA.md)
 

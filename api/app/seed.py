@@ -6,11 +6,9 @@ from . import models
 # Crear tablas si no existen
 Base.metadata.create_all(bind=engine)
 
-
 def cargar_datos():
     db: Session = SessionLocal()
     try:
-        # Ruta corregida: "data/seed.json"
         with open("data/seed.json", "r", encoding="utf-8") as f:
             datos = json.load(f)
 
@@ -37,7 +35,6 @@ def cargar_datos():
                     db.refresh(nuevo)
     finally:
         db.close()
-
 
 if __name__ == "__main__":
     cargar_datos()
