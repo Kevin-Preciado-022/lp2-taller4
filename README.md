@@ -7,7 +7,7 @@
 
 ## Autor
 
-- [@estudiante](https://www.github.com/estudiante)
+- [@Kevin Dario Preciado Vallecilla](https://github.com/Kevin-Preciado-022/lp2-taller4.git)
 
 ## Descripción del Proyecto
 
